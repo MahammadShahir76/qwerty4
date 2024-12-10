@@ -1,0 +1,102 @@
+.mainProvider {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.mainProvider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4; /* Adjust opacity */
+    z-index: -1; /* Ensures the image is behind the content */
+}
+
+.containerProvider {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titleProvider {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.inputBoxProvider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inputFieldProvider, .textareaProvider, .selectProvider {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+
+.inputFieldProvider:focus, .textareaProvider:focus, .selectProvider:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.textareaProvider {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.buttonProvider {
+    height: 60px;
+    width: 145px;
+    border-radius: 50px;
+    background: #9AA6B2;
+    border: none;
+    cursor: pointer;
+    color: #182C24;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.errorProvider {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.linkProvider {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.linkProvider:hover {
+    text-decoration: underline;
+}
+
+.labelProvider {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    margin-left: -69px;
+}
